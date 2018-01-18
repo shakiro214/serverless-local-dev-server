@@ -36,9 +36,9 @@ functions:
       - alexaSkill
       - http: GET /hello
 
-# Add serverless-local-dev-server to your plugins:
+# Add serverless-local-server-plus-static to your plugins:
 plugins:
-  - serverless-local-dev-server
+  - serverless-local-server-plus-static
 
 # if needed add folder for serving static files if necessary (relative to service path)
 custom:
