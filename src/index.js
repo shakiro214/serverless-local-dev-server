@@ -32,7 +32,7 @@ class ServerlessLocalDevServerPlugin {
     server.log = this.serverless.cli.log.bind(this.serverless.cli)
     Object.assign(server.customEnvironment, this.options.environment)
     server.setConfiguration(this.serverless.service, this.serverless.config.servicePath)
-    server.start(this.options.port || 5005)
+    server.start(this.options.port || 3000)
   }
 }
 

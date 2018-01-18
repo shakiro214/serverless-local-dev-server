@@ -53,10 +53,10 @@ custom:
 serverless local-dev-server
 ```
 
-On default the server listens on port 5005. You can specify another one with the *--port* argument:
+On default the server listens on port 3000. You can specify another one with the *--port* argument:
 
 ```sh
-serverless local-dev-server --port 5000
+serverless local-dev-server --port 5005
 ```
 
 To automatically restart the server when files change, you may use nodemon:
@@ -71,25 +71,8 @@ To see responses returned from Lambda and stack traces, prepend SLS_DEBUG=*
 SLS_DEBUG=* serverless local-http-server
 ```
 
-### 4. For Alexa Skills
-
-#### 4.1 Share localhost with the internet
-
-For example with forwardhq:
-
-```sh
-forward 5005
-```
-
-#### 4.2 Configure AWS to use your HTTPS endpoint
-
-In the Configuration pane, select HTTPS as service endpoint type and specify the forwarded endpoint URL.
-
-As method for SSL Certificate validation select *My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority*.
-
-
 # License & Credits
 
 Licensed under the MIT license.
 
-Created and maintained by [DieProduktMacher](http://www.dieproduktmacher.com).
+Forked from serverless-local-dev-server by  [DieProduktMacher](http://www.dieproduktmacher.com).
