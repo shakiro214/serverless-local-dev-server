@@ -33,7 +33,6 @@ functions:
   hello:
     handler: handler.hello
     events:
-      - alexaSkill
       - http: GET /hello
 
 # Add serverless-offline-plus-static to your plugins:
