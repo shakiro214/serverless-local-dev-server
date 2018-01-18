@@ -12,7 +12,7 @@ class HttpEndpoint extends Endpoint {
     }
     this.method = httpConfig.method
     this.resourcePath = httpConfig.path.replace(/\{([a-zA-Z_]+)\}/g, ':$1')
-    this.path = path.join('/http', this.resourcePath)
+    this.path = this.resourcePath
   }
   getLambdaEvent (request) {
     return {

@@ -1,13 +1,10 @@
 Serverless Local Dev Server Plugin (Beta)
 =======
 
-[![Build Status](https://travis-ci.org/DieProduktMacher/serverless-local-dev-server.svg?branch=develop)](https://travis-ci.org/DieProduktMacher/serverless-local-dev-server)
-
-This plugin exposes Alexa-Skill and HTTP events as local HTTP endpoints, removing the need to deploy every code change to AWS Lambda. You can connect these endpoints to Alexa, Facebook Messenger or other services via forwardhq, ngrok or any other forwarding service.
+Develop Serverless endpoints with static files locally.
 
 Supported features:
 
-* Expose `alexa-skill` and `http` events as local HTTP endpoints
 * Environment variables
 * Basic HTTP integration
 * Auto reload via nodemon (see *How To*)
@@ -20,7 +17,7 @@ This package requires node >= 6.0
 ### 1. Install the plugin
 
 ```sh
-npm install serverless-local-dev-server --save-dev
+npm install @shakiro214/serverless-local-dev-server --save-dev
 ```
 
 ### 2. Add the plugin to your serverless configuration file

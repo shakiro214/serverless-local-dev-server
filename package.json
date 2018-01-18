@@ -1,21 +1,19 @@
 {
-  "name": "serverless-local-dev-server",
-  "version": "0.2.4",
+  "name": "@shakiro214/serverless-local-dev-server",
+  "version": "1.0.0",
   "engines": {
     "node": ">=6.0"
   },
-  "description": "Develop Alexa-Skill and HTTP functions in Serverless without deploying to AWS",
-  "author": "DieProduktMacher <www.dieproduktmacher.com>",
+  "description": "Develop Serverless endpoints with static files locally",
+  "author": "shakiro214 <shakiro214@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DieProduktMacher/serverless-local-dev-server"
+    "url": "https://github.com/shakiro214/serverless-local-dev-server"
   },
   "keywords": [
     "serverless",
     "serverless-plugin",
-    "alexa",
-    "alexa-skill",
     "http",
     "development",
     "dev",
