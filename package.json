@@ -1,6 +1,6 @@
 {
-  "name": "serverless-local-server-plus-static",
-  "version": "1.0.1",
+  "name": "serverless-offline-plus-static",
+  "version": "1.0.3",
   "engines": {
     "node": ">=6.0"
   },

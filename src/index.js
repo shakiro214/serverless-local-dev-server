@@ -8,8 +8,8 @@ class ServerlessLocalDevServerPlugin {
     this.options = options || {}
 
     this.commands = {
-      'local-dev-server': {
-        usage: 'Runs a local dev server for Alexa-Skill and HTTP functions',
+      'offline-plus-static': {
+        usage: 'Develop Serverless endpoints with static files offline',
         lifecycleEvents: [ 'loadEnvVars', 'start' ],
         options: {
           port: { usage: 'Port to listen on', shortcut: 'p' }
@@ -18,8 +18,8 @@ class ServerlessLocalDevServerPlugin {
     }
 
     this.hooks = {
-      'local-dev-server:loadEnvVars': this.loadEnvVars.bind(this),
-      'local-dev-server:start': this.start.bind(this)
+      'offline-plus-static:loadEnvVars': this.loadEnvVars.bind(this),
+      'offline-plus-static:start': this.start.bind(this)
     }
   }
 

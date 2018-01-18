@@ -17,7 +17,7 @@ This package requires node >= 6.0
 ### 1. Install the plugin
 
 ```sh
-npm install serverless-local-server-plus-static --save-dev
+npm install serverless-offline-plus-static --save-dev
 ```
 
 ### 2. Add the plugin to your serverless configuration file
@@ -36,9 +36,9 @@ functions:
       - alexaSkill
       - http: GET /hello
 
-# Add serverless-local-server-plus-static to your plugins:
+# Add serverless-offline-plus-static to your plugins:
 plugins:
-  - serverless-local-server-plus-static
+  - serverless-offline-plus-static
 
 # if needed add folder for serving static files if necessary (relative to service path)
 custom:
@@ -50,19 +50,19 @@ custom:
 ### 3. Start the server
 
 ```sh
-serverless local-dev-server
+serverless offline-plus-static
 ```
 
 On default the server listens on port 3000. You can specify another one with the *--port* argument:
 
 ```sh
-serverless local-dev-server --port 5005
+serverless offline-plus-static --port 5005
 ```
 
 To automatically restart the server when files change, you may use nodemon:
 
 ```sh
-nodemon --exec "serverless local-dev-server" -e "js yml json"
+nodemon --exec "serverless offline-plus-static" -e "js yml json"
 ```
 
 To see responses returned from Lambda and stack traces, prepend SLS_DEBUG=*
