@@ -1,4 +1,4 @@
-Serverless Local Dev Server Plugin (Beta)
+Serverless Plugin for Offline Dev + Static Files (Beta)
 =======
 
 Develop Serverless endpoints with static files locally.
@@ -40,6 +40,7 @@ plugins:
   - serverless-offline-plus-static
 
 # if needed add folder for serving static files if necessary (relative to service path)
+# serves the specified folder out of the path "/static"
 custom:
   localDevStaticFolder: path/to/static/files
 ```
