@@ -1,5 +1,5 @@
 {
-  "name": "@shakiro214/serverless-local-dev-server",
+  "name": "serverless-local-server-plus-static",
   "version": "1.0.0",
   "engines": {
     "node": ">=6.0"

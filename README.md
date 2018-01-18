@@ -17,7 +17,7 @@ This package requires node >= 6.0
 ### 1. Install the plugin
 
 ```sh
-npm install @shakiro214/serverless-local-dev-server --save-dev
+npm install serverless-local-server-plus-static --save-dev
 ```
 
 ### 2. Add the plugin to your serverless configuration file
